@@ -1,5 +1,7 @@
 # LiveviewCounter
 
+![ui-image](https://github.com/andrewjprice/liveview-counter/blob/master/liveview-counter.png)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
