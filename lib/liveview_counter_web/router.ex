@@ -8,7 +8,7 @@ defmodule LiveviewCounterWeb.Router do
     plug Phoenix.LiveView.Flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug :put_layout, {LiveViewCounterWeb.LayoutView, :app}
+    plug :put_layout, {LiveviewCounterWeb.LayoutView, :app}
   end
 
   pipeline :api do
@@ -18,7 +18,7 @@ defmodule LiveviewCounterWeb.Router do
   scope "/", LiveviewCounterWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live("/", CounterLive)
   end
 
   # Other scopes may use custom stacks.

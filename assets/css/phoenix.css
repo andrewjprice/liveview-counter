@@ -132,3 +132,7 @@ header nav a {
     margin: 2rem 1rem;
   }
 }
+
+.center-align {
+  text-align: center;
+}
